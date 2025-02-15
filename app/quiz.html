@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills Evaluation Quiz</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    
+    .magic-card {
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  
+  <header class="bg-white shadow-md py-4 px-6 flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+      <h1 class="text-2xl font-bold text-gray-800">TechVritti</h1>
+    </div>
+    <nav class="space-x-4">
+      <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Home</a>
+      <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">About</a>
+      <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Contact</a>
+    </nav>
+  </header>
+
+  
+  <main class="container mx-auto px-6 py-8">
+    <div class="max-w-3xl mx-auto magic-card">
+      <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Skills Evaluation Quiz</h1>
+      <form id="quizForm" action="php/submit_quiz.php" method="POST" class="space-y-6">
+        <!-- Dynamically Generated Questions -->
+        <div id="quizQuestions" class="space-y-4">
+          <!-- Questions will be dynamically loaded here -->
+        </div>
+        <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          Submit Quiz
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 px-6 mt-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2023 TechVritti. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>
